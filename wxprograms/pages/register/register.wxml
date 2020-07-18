@@ -1,0 +1,23 @@
+<!--pages/register/register.wxml-->
+<view class="title">
+<text>用户注册</text>
+</view>
+<view class="kot"> 
+<p>手机号:</p>
+<input   type="number" name="photo" bindinput="photoinput" placeholder="请输入手机号" maxlength="11"/>
+ <!-- <view class="row">
+    <view class="row-text" bindtap="sendCode">
+      <text>发送短信验证码</text>
+    </view>
+  </view> -->
+</view>
+<view class="kot">
+<p>用户密码:</p>
+<input   type="text" bindinput="passwordinput" placeholder="请输入密码" />
+</view>
+<view class="btn">
+<button open-type="getUserInfo" lang="zh-CN"
+bindgetuserinfo="loginBtnClick" >
+注册
+</button>
+</view>

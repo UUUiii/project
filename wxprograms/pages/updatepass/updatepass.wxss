@@ -1,0 +1,47 @@
+/* pages/updatepass/updatepass.wxss *//* pages/login/login.wxss */
+text{
+  font-family: '宋体';
+  font-size: 30rpx;
+  color:black;
+  font-weight: bold;
+}
+.kot{
+  margin:15rpx;
+}
+.title{
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  background:#4169E1;
+  color: white;
+  margin-bottom: 10rpx;
+}
+p{
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: bold;
+} 
+input{
+  border: 1px solid black;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  width: 700rpx;
+  height: 55rpx;
+}
+button{
+  background: #4169E1;
+  border-radius: 30rpx;
+  
+}
+.btn{
+  width:700rpx ;
+  background:#4169E1 ;
+  margin:24rpx;
+  border-radius: 30rpx;
+}
+.downtitle{
+  color: #4169E1;
+  font-family: '宋体';
+  text-align: right;
+  font-size: 24rpx;
+}

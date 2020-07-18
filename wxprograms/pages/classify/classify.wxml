@@ -1,0 +1,21 @@
+<!--pages/classify/classify.wxml-->
+
+<view class="head">
+<scroll-view scroll-y style="height:500rpx;margin-top:100rpx">
+  <view class="honcent {{item.checked?'meaued':'meau'}}" wx:for="{{typelist}}" :key="{{index}}" data-id="{{item.cid}}" data-name="{{item.typename}}" bindtap="selprotype">
+  {{item.typename}}
+  </view>
+</scroll-view>
+</view>
+
+
+<scroll-view scroll-y class="conpro">
+<view wx:for="{{shoplist}}" :key="{{index}}" class="concent">
+  <navigator url="/pages/prodetail/prodetail?id={{item.id}}">
+  <image src="{{item.comimgsrc}}" mode="widthFix" mode="heightFix" ></image>
+  </navigator>
+  <view class="title">{{item.comname}}</view>
+  <view class="proice">价格:{{item.price}}</view>
+  <view class="btn" data-id="{{item.id}}" bindtap="proclick">购买</view>
+</view>
+</scroll-view>

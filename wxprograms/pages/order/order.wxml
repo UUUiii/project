@@ -1,0 +1,42 @@
+<!--pages/order/order.wxml-->
+<view class="head"> 
+  <view class="{{checked?'title':'untitle'}}" >
+  <navigator url="/pages/order/order?iconname=全部">全部</navigator> 
+  </view>
+  <view class="{{checked1?'title':'untitle'}}">
+  <navigator url="/pages/order/order?iconname=待付款">待付款</navigator> 
+  </view>
+  <view class="{{checked2?'title':'untitle'}}">
+  <navigator url="/pages/order/order?iconname=待发货">待发货</navigator> 
+  </view>
+  <view class="{{checked3?'title':'untitle'}}">
+  <navigator url="/pages/order/order?iconname=待收货">待收货</navigator> 
+  </view>
+  <view class="{{checked4?'title':'untitle'}}">
+  <navigator url="/pages/order/order?iconname=已完成">已完成</navigator> 
+  </view>
+  <view class="{{checked5?'title':'untitle'}}">
+  <navigator url="/pages/order/order?iconname=售后">售后</navigator> 
+  </view>
+</view>
+
+<scroll-view scroll-y class="order">
+<view wx:for="{{numberlist}}" class="orderm">
+ <text class="orderhead">{{item}}</text>
+  
+    <view wx:for="{{prolist[index].data}}" wx:key="{{index}}" class="orderlist">
+      <view class="orderimg"><image src="{{item.orderimgsrc}}" mode="widthFix" mode="heightFix" style="width:240rpx;height:140rpx"></image></view>
+     
+      <view class="ordertitle"> 
+     <text class="ordername">{{item.ordername}}</text>
+     <text class="orderstatus">状态:<text>{{item.orderstatus}}</text></text>
+      </view>
+      <text class="ordertype">规格:{{item.ordertype}}</text>
+      <text class="orderdate">{{item.orderdate}}</text>
+      <view class="ordernumprice">
+     <text class="ordernum">X{{item.ordernum}}</text>
+     <text class="ordersumprice">¥{{item.orderprice}}</text> 
+      </view>
+    </view>
+</view>
+</scroll-view>

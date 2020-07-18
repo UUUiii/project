@@ -1,0 +1,26 @@
+<!--pages/place/add/add.wxml-->
+
+<!-- 收货人 -->
+<view class="hand">
+<text>收货人</text>
+<input type="text" bindinput="user" ></input>
+</view>
+
+<!-- 手机号 -->
+<view class="hand">
+<text>手机号</text>
+<input type="text" bindinput="photo"></input>
+</view>
+
+<view class="hand">
+<text>所在地区</text>
+<input type="text" bindinput="place"></input>
+</view>
+
+<view class="hand">
+<text>详细地址</text>
+<input type="text" bindinput="deplace"></input>
+</view>
+
+<button class="btn" bindtap="setplace">保存地址</button>
+<!-- ! -->

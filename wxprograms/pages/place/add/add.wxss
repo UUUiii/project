@@ -1,0 +1,19 @@
+/* pages/place/add/add.wxss */
+.hand{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  margin-left: -280rpx;
+  height: 100rpx;
+  border-bottom:1rpx solid #cccccc;
+}
+.hand input{
+  margin-left: 10rpx;
+}
+.btn{
+  background: red;
+  top:10rpx;
+  border-radius: 18rpx;
+}

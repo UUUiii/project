@@ -1,0 +1,131 @@
+/* pages/user/user.wxss */
+/* @import "../../wxss/font-awesome-4.7.0/css/font-awesome.min.wxss"; */
+.body{
+  background:#F8F8FF;
+  margin-top: 30rpx;
+}
+.head{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 300rpx;
+  width: 100vw;
+  /* border: 1rpx solid black; */
+  background: linear-gradient(to right, red , yellow);
+  
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+  /* border: 1rpx solid black; */
+  border-radius: 48%;
+  margin: 20rpx;
+}
+.name{
+  width: 50%;
+  font-size: 35rpx;
+  font-family: '宋体';
+  font-weight: 700;
+  color: white;
+}
+.place{
+  /* border: 1rpx solid black; */
+  font-family: '宋体';
+  font-size: 45rpx;
+  font-weight: 500;
+  color: white;
+  background: #0099FF;
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  /* width: 100%; */
+}
+.container{
+  /* border:1rpx solid black; */
+  height: 200rpx;
+  margin-top: -170rpx;
+}
+.concent{
+  /* border:1rpx solid black; */
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  text-align: center;
+  font-family: '宋体';
+  height: 200rpx;
+  width: 100vw;
+}
+.concent .col{
+  /* border:1rpx solid black; */
+  width: 50%;
+  /* height: 200rpx; */
+  border-right:1rpx solid black;
+  font-size: 30rpx;
+}
+.concent .history{
+  /* border:1rpx solid black; */
+  /* height: 200rpx; */
+  width: 50%;
+  font-size: 30rpx;
+}
+.order{
+  background: #fff;
+  border: 2rpx solid #F5F5F5;
+  margin-top: 50rpx;
+  border-radius: 5%;
+  margin:30rpx;
+  height: 300rpx;
+}
+.title{
+  width: 726rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 8rpx;
+  margin-left: 25rpx;
+  /* background: #fff;
+  border: 2rpx solid #F5F5F5; */
+  
+  /* border-radius: 12rpx; */
+}
+.title text{
+  width: 50%;
+  font-family: '宋体';
+  font-weight: 700;
+  margin:15rpx;
+}
+.orl{
+  color: black;
+}
+.orr{
+  text-align: right;
+  color: #BEBEBE;
+  margin-top: 10rpx;
+}
+.orderlist{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin-left: 40rpx;
+  margin-top: -160rpx;
+  /* background-color: black; */
+  min-height: 100rpx;
+
+}
+.olist{
+  display: flex;
+  width: 100vw;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.olist image{
+  width: 100rpx;
+  height: 90rpx;
+}

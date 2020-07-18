@@ -1,0 +1,87 @@
+<!--pages/index/index.wxml-->
+<view class="title">
+<text>艳兰牌油渍净</text>
+</view>
+<!-- <view>
+<button bindtap="add">上传</button>
+</view> -->
+
+<view class="slides">
+<swiper autoplay indicator-dots circular>
+<swiper-item wx:for="{{swiperlist}}" wx:key="{{index}}">
+<navigator>
+<image mode="widthFix" mode="heightFix" src="{{item.imgsrc}}" ></image>
+</navigator>
+</swiper-item>
+</swiper>
+</view>
+
+<view class="nav">
+<ul >
+<li wx:for="{{iconlist}}" wx:key="{{index}}" >
+<image src="{{item.iconsrc}}" mode="widthFix" mode="heightFix"></image>
+<text bindtap="bclick">{{item.iconname}}</text>
+<!-- <button  bindtap="bclick">充值</button> -->
+</li>
+</ul>
+</view>
+
+<!-- <view class="nav">
+<ul>
+<li>
+<image src="/icons/平台公告 (1).png"  mode="widthFix" mode="heightFix"></image>
+<text>公告</text>
+</li>
+<li>
+<image src="/icons/好友.png"  mode="widthFix" mode="heightFix"></image>
+<text>公告</text>
+</li>
+<li>
+<image src="/icons/平台公告 (1).png"  mode="widthFix" mode="heightFix"></image>
+<text>公告</text>
+</li>
+<li>
+<image src="/icons/平台公告 (1).png"  mode="widthFix" mode="heightFix"></image>
+<text>公告</text>
+</li>
+</ul>
+</view> -->
+
+
+<view class="com">
+<scroll-view scroll-y>
+<!--  -->
+<view wx:for="{{comlist}}" wx:key="{{index}}" class="product">
+<navigator class="comimg" url="/pages/prodetail/prodetail?id={{item.id}}">
+<image src="{{item.comimgsrc}}" mode="widthFix" mode="heightFix"></image>
+</navigator>
+
+<view class="comintro">
+<!--名称-->
+<view class="comtitle">
+<text>{{item.comname}}</text>
+</view>
+<!-- 价格 -->
+<view class="comprice">
+<text class="comp">平台价:￥</text>
+<text class="price">{{item.price}}元</text>
+<text class="combtn" bindtap="shopclick" data-id="{{item.id}}">购买</text> 
+</view>
+
+<!-- 剩余 -->
+<view class="comnum">
+<text>还剩{{item.comnum}}件</text>
+</view>
+
+</view>
+</view>
+
+<!-- 弹窗 -->
+ <view class="modalDlg" wx:if="{{showModal}}">
+        <view class='close_mask' bindtap="close_mask">X</view>
+        <view class="dlgtitle">暂无</view>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+</scroll-view>
+</view>

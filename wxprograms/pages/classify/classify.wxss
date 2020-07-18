@@ -1,0 +1,76 @@
+/* pages/classify/classify.wxss */
+view{
+  margin:0;
+  padding: 0;
+}
+
+.head{
+  margin-top:-100rpx;
+  background: gray;
+  color: white;
+  width: 25%;
+  height: 600rpx;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.head view{
+  line-height: 80rpx;
+  height: 80rpx;
+  text-align: center;
+}
+.meaued{
+  background: white;
+  color: black;
+}
+.meau{
+  color: white;
+}
+.conpro{
+  position: relative;
+  width: 80%;
+  height: 800rpx;
+  margin-left: 200rpx;
+}
+.concent{
+  display: flex;
+  flex-direction: row;
+  height: 140rpx;
+  width: 80vw;
+  border-bottom: 1rpx solid #cccccc;
+  margin:20rpx;
+}
+.title{
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 600;
+  width: 140rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: solid;
+  margin-left: 60rpx;
+}
+.proice{
+  font-size: 26rpx;
+  font-family: '宋体';
+  font-weight: 300;
+  width: 180rpx;
+  margin-top:80rpx;
+  margin-left: -100rpx;
+}
+.btn{
+  margin:80rpx;
+  height: 40rpx;
+  width: 90rpx;
+  background: #FFA54F;
+  /* width: 100rpx; */
+  border-radius: 20rpx;
+  color: white;
+  font-size: 26rpx;
+  text-align: center;
+}
+.conpro image{
+  width: 120rpx;
+  height: 120rpx;
+  
+}

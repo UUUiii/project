@@ -1,0 +1,126 @@
+/* pages/order/order.wxss */
+.head{
+  display: flex;
+  flex-direction: row;
+  margin:20rpx;
+  border-bottom: 1rpx solid #cccccc;
+  width: 100%;
+}
+.head view{
+width: 30%;
+}
+.title{
+  background: #cccccc;
+  text-align: center;
+}
+.untitle{
+  background: #fff;
+}
+.order{
+  margin-top: -40rpx;
+  height: 100%;
+  width: 100vw;
+  margin:20rpx;
+}
+.orderhead{
+  font-family:serif;
+  font-size: 30rpx;
+  font-weight: bolder;
+  height: 40rpx;
+  width: 100vw;
+  color: #FF9900;
+  line-height: 40rpx;
+}
+.orderlist{
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;
+   margin-bottom: 20rpx;
+   height: 140rpx;
+   width: 100vw;
+   /* border-bottom: 5rpx solid #cccccc; */
+   /* border:1rpx solid black; */
+}
+
+.orderlist .orderimg{
+  width: 240rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border:1rpx solid black; */
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+.ordertitle{
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:600rpx;
+  height: 50rpx;
+  margin-top:-48rpx;
+  margin-left: 120rpx;
+  /* padding-left: 10rpx; */
+  /* border:1rpx solid black; */
+}
+.orderlist .ordername{
+  width: 140rpx;
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.orderlist .orderstatus{
+  width: 200rpx; 
+}
+.orderstatus text{
+  color: #FF6600;
+}
+.orderlist .ordertype{
+  font-family: '宋体';
+  font-size: 24rpx;
+  color: #cccccc;
+  line-height: 50rpx;
+  width:180rpx;
+  height: 50rpx;
+  text-align: right;
+  margin-left: -500rpx;
+  margin-top:70rpx;
+  /* border:1rpx solid black; */
+}
+.orderdate{
+  font-size: 20rpx;
+  font-weight: 600;
+  width:450rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  white-space: nowrap;
+  /* border:1rpx solid black; */
+}
+
+.ordernumprice{
+  width: 180rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 80rpx;
+  margin-left: -80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ordernum{
+  width: 60rpx;
+}
+.ordersumprice{
+  width: 120rpx;
+  margin-left: -10rpx;
+  font-size: 30rpx;
+  color: red;
+}
+.orderm{
+
+  margin-top:30rpx;
+  border-bottom: 5rpx solid #cccccc;
+}

@@ -1,0 +1,207 @@
+/* pages/index/index.wxss */
+text{
+  font-family: '宋体';
+  font-size: 30rpx;
+}
+.title{
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  background:#4169E1;
+  color: white;
+  margin-bottom: 10rpx;
+} 
+ .slides{
+ width: 100%;
+height: 100%;
+}
+.slides swiper{
+  width: 100%;
+  height: 350rpx;
+}
+
+.slides navigator{
+  width: 100%;
+  height: 100%;
+}
+.slides image{
+  width: 100%;
+  height: 100%;
+} 
+.nav{
+  margin-top: 10rpx;
+  height: 150rpx;
+  background:#F5F5F5;
+}
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+.nav li{
+  margin-left:10rpx ;
+  margin-right: 50rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150rpx;
+}
+.nav image{
+  width: 100rpx;
+  height: 70rpx;
+  margin:16rpx;
+  margin-left:33rpx;
+}
+
+.nav text{
+font-family: '宋体';
+font-size: 28rpx;
+font-weight: bold;
+text-align: center;
+margin-left: 4rpx;
+}
+.com{
+  color: black;
+
+}
+.com image{
+  width: 350rpx;
+  height: 200rpx;
+  margin: 22rpx;
+ margin-left: 8rpx;
+}
+.product{
+  width: 100%;
+  height: 250rpx;
+  background: white;
+}
+.comimg{
+  width: 360rpx;
+  height: 210rpx;
+  float: left;
+  text-align: center;
+  justify-content: center;
+}
+.comintro{
+  width: 360rpx;
+  height: 260rpx;
+  display: flex;
+  flex-direction: column;
+}
+.comtitle{
+  font-family: '宋体';
+  font-size: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.comprice{
+  font-family: '宋体';
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  text-align:  center;
+  line-height: 70rpx;
+}
+.comprice text{
+  width: 100%;
+}
+.comp{
+  color: gray;
+  width: 600rpx;
+  font-size: 24rpx;
+}
+.price{
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  width: 100%;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.combtn{
+  background: #FFA54F;
+  width: 300rpx;
+  border-radius: 20rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.comnum{
+border: 1px solid #FFA54F;
+width: 200rpx;
+color: red;
+border-radius: 15rpx;
+margin-top: 20rpx;
+height: 50rpx;
+line-height: 50rpx;
+margin-left: 50rpx;
+}
+
+
+/* 点击充值弹窗 */
+.dlgtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+ 
+.modalDlg {
+  width: 580rpx;
+  height: 450rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.recharge_amount {
+  color: #aaa;
+  width: 450rpx;
+  height: 80rpx;
+  background: #f1f1f1;
+  text-align: center;
+  border-radius: 12rpx;
+  margin-top: 56rpx;
+  text-indent: 0;
+}
+ 
+.save_money {
+  color: #fff;
+  width: 270rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #d95155;
+  text-align: center;
+  border-radius: 12rpx;
+  margin-top: 80rpx;
+  font-size: 28rpx;
+  text-indent: 0em;
+}
+ 
+.close_mask {
+  color: #000;
+  position: relative;
+  left: 40%;
+  /* top: -82%; */
+  font-size: 32rpx;
+}
+ 
+/*弹窗结束  */

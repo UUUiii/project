@@ -1,0 +1,25 @@
+<!--pages/place/place.wxml-->
+<view class="head">
+<input type="text" placeholder="请输入地址"></input>
+<view class="serch">
+<icon type="search" color="black" class="ic"></icon>
+<view class="text">搜索</view>
+</view>
+</view>
+
+
+<view class="addplace">
+  <view> <navigator url="/pages/place/add/add">手动添加</navigator> </view>
+  <text>地址只能添加6个</text>
+</view>
+
+<scroll-view scroll-y class="concent">
+<view wx:for="{{placelist}}" wx:key="index" class="farme">
+  <view class="farmeuser"> 
+ <view> 收货人:{{item.username}}</view>
+ <view> {{item.photo}}</view>
+  </view>
+
+  <view>收货地址:{{item.place}}{{item.deplace}}</view>
+</view>
+</scroll-view>

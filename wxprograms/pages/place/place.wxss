@@ -1,0 +1,73 @@
+/* pages/place/place.wxss */
+.head{
+  display: flex;
+  flex-direction: row;
+  margin:20rpx;
+  justify-content: center;
+  align-items: center;
+}
+.head .serch{
+  font-family: '宋体';
+  font-weight: 400;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  background: #FF9933;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 18rpx;
+  display: flex;
+  flex-direction: row;
+}
+.head .ic{
+  line-height: 50rpx;
+}
+.head .text{
+  margin-left: 10rpx;
+}
+.head input{
+  border:1rpx solid #cccccc;
+  width: 300rpx;
+  height: 40rpx;
+  /* margin-left: 10rpx; */
+  border-radius: 18rpx;
+  text-align: center;
+}
+.addplace{
+  border-bottom: 1rpx solid #cccccc;
+}
+.addplace view{
+  background: red;
+  margin:20rpx;
+  width: 120rpx;
+  height: 40rpx;
+  color: #fff;
+  border-radius: 9rpx;
+}
+.addplace text{
+  font-family: '宋体';
+  font-size: 25rpx;
+  color: #cccccc;
+  left: 10rpx;
+}
+.concent{
+  display: flex;
+  flex-direction: column;
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.farme{
+  width: 700rpx;
+  margin:20rpx;
+  border:1rpx solid #cccccc;
+  border-radius: 18rpx;
+  
+}
+.farmeuser{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40rpx;
+}

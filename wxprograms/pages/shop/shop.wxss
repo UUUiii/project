@@ -1,0 +1,179 @@
+.head{
+  display: flex;
+  flex-direction: row;
+  margin-left: 45rpx;
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.head text{
+  margin-left: 100rpx;
+}
+.headtitle{
+  padding-left: 20rpx;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: -180rpx;
+  /* margin-left: 70rpx; */
+  width: 100%;
+  /* border: 1rpx solid black; */
+}
+.container .concent{
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+  padding-bottom: 15rpx;
+  margin-top:10rpx;
+  border-bottom:1rpx  solid #CCCCCC;
+ 
+}
+.container .shopimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  /* border:1rpx solid black; */
+}
+.container image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.container .shopintro{
+  display: flex;
+  flex-direction: row;
+  width: 50%; 
+  justify-content: center; 
+  align-items: center; 
+  /* border:1rpx solid black; */
+}
+.container .shoptitle{
+  width: 30%;
+  margin-left: -10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 700;
+  /* border:1rpx solid black; */
+}
+.container .price{
+  width: 20%;
+  margin-left: 78rpx;
+  /* border:1rpx solid black; */
+}
+
+/* 操作 */
+.shopuser{
+  width: 25%;
+  display: flex;
+  height: 120rpx;
+  line-height: 120rpx;
+  justify-content: center;
+  align-items: center;
+  /* border:1rpx solid black; */
+}
+.shopuser text{
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+.shopminus{
+background: #99CCFF;
+border-radius: 50%;
+}
+.shopadd{
+  background: #99CCFF;
+  border-radius: 50%;
+}
+
+
+/* 勾选 */
+.check{
+  /* padding-right: 30rpx; */
+  margin:30rpx;
+  margin-top: 48rpx;
+}
+/**绿色勾*/
+.myicon-tick-checked {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #2ac845;
+  }
+  
+  
+  /**灰色勾*/
+  .myicon-tick-uncheck {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #5f646e;
+  }
+  
+  
+  .myicon-tick-checked:before, .myicon-tick-checked:after,.myicon-tick-uncheck:before,.myicon-tick-uncheck:after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  border: 1px solid;
+  background-color: white;
+  }
+  
+  
+  .myicon-tick-checked:before,.myicon-tick-uncheck:before {
+  width: 1px;
+  height: 1px;
+  left: 25%;
+  top: 50%;
+  transform: skew(0deg,50deg);
+  }
+  
+  
+  .myicon-tick-checked:after,.myicon-tick-uncheck:after {
+  width: 3px;
+  height: 1px;
+  left: 45%;
+  top: 42%;
+  transform: skew(0deg,-50deg);
+  }
+  
+  .footer{
+    height: 120rpx;
+    width: 100vw;
+    background: #eee;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footerfont{
+    background: skyblue;
+    height: 100%;
+    color: #fff;
+    padding: 0 100rpx;
+    line-height: 120rpx;
+  }
+
+ .checkall{
+  left: 20rpx;
+  }
+.iconstyle{
+  float: right;
+  margin: 0 5rpx;
+}
+.shopspecifition{
+  font-family: '宋体';
+  font-size: 26rpx;
+  color: #CCCCCC;
+}

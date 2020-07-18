@@ -1,0 +1,82 @@
+<!--pages/prodetail/prodetail.wxml-->
+ <!-- 弹窗 -->
+ <view class="showlayer" hidden="{{!isshowlayer}}">
+  <view class="showconcent">
+    <image src="{{loadpiclist[0].pimgsrc}}" mode="widthFix" mode="heightFix"></image>
+      <!--  -->
+    <view bindtap="close" style="position:absolute;right:15rpx;top:-5rpx;color:#cccccc;font-size:45rpx;">
+    x
+    </view>
+    <!--  -->
+      <view class="showprice">
+      ¥{{currspelist.price}}
+      </view>
+      <view class="showtypeed">
+      已选:{{currspelist.tname}}
+      </view>
+
+<!-- 框中部 -->
+<view class="showtype">
+    <view>
+    <text>规格:</text>
+      <view class="showspecification">
+        <view bindtap="setspe" class="{{currspelist.id===item.id?'active':''}}" wx:for="{{typelist}}" data-price="{{item.price}}" data-id="{{item.id}}">{{item.tname}}</view>
+      </view>
+    </view>
+      <view class="shownum">
+          <text>购买数量</text>
+          <view class="shopuser">
+            <text class="shopminus" data-id="{{item.id}}" data-num="{{item.comnum}}" bindtap="minus">-</text>
+            <text class="number" >{{num}}</text>
+            <text class="shopadd" data-id="{{item.id}}" data-num="{{item.comnum}}" bindtap="add">+</text>
+          </view>
+      
+      </view>
+</view>
+<!-- 框脚 -->
+      <view class="footer" style="left:0">
+        <view class="add" bindtap="addshop">
+        加入购物车
+        </view>
+        <view class="buy" bindtap="buyspe">
+        立即购买
+        </view>
+      </view>
+  </view>
+</view>
+<!-- 预览图 -->
+<swiper indicator-dots indicator-active-color="white" autoplay>
+  <swiper-item wx:for="{{loadpiclist}}" >
+    <image data-src="{{item.pimgsrc}}" src="{{item.pimgsrc}}" bindtap="preview"></image>
+  </swiper-item>
+</swiper>
+<!-- 商品名称 -->
+<view class="title">
+  <view class="name">{{shopinfolist[0].comname}}</view>
+  <view class="tprice">¥{{shopinfolist[0].price}}</view>
+</view>
+<!-- 详情 -->
+<view class="concent">
+  <view class="contitle">商品详情</view>
+</view> 
+ <view class="context">
+ <!-- 描述  -->
+ <view class="confont">
+  {{shopinfolist[0].detail}}
+ </view>
+  <view wx:for="{{loadpiclist}}" class="conview">
+   <image src="{{item.pimgsrc}}" style="width:700rpx" mode="widthFix"></image>
+  </view>
+ </view>
+<!-- 模块栏 -->
+ <view class="footer">
+  <view class="collect" bindtap="collect">
+  收藏
+  </view>
+   <view class="addshop" bindtap="addshop">
+   加入购物车
+  </view>
+   <view class="buyshop" bindtap="Popups">
+   立即购买
+  </view>
+ </view>

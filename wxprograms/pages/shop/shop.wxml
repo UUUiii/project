@@ -1,0 +1,63 @@
+<!--pages/shop/shop.wxml-->
+<view class="head">
+  <text>商品</text>
+  <text class="headtitle">名称</text>  
+  <text class="headprice">价格</text>
+  <text class="headuser">操作</text>
+</view>
+<!-- 购物列表 -->
+<view class="container">
+<scroll-view scroll-y>
+
+<view wx:for="{{shoplist}}" wx:key="{{index}}" class="concent">
+<!--  -->
+<!-- 选择图标 -->
+<view class="check">
+<view data-id="{{item.id}}" bindtap="select" class="{{item.checked?'myicon-tick-checked':'myicon-tick-uncheck'}}">
+</view>
+</view>
+<!-- 图片 -->
+<view class="shopimg">
+<image src="{{item.comimgsrc}}" mode="widthFix" mode="heightFix"></image>
+</view>
+<!--  -->
+<view class="shopintro">
+<!--名称-->
+<view class="shoptitle">
+<text>{{item.comname}}</text>
+
+<view class="shopspecifition">
+  {{item.specification}}
+</view>
+
+</view>
+<!-- 价格 -->
+<view class="shopprice">
+<text class="price">{{item.price}}元</text>
+</view>
+
+</view>
+<!-- 操作 -->
+<view class="shopuser">
+  <text class="shopminus" data-id="{{item.id}}" data-num="{{item.comnum}}" bindtap="minus">-</text>
+  <text class="number" >{{item.num}}</text>
+  <text class="shopadd" data-id="{{item.id}}" data-num="{{item.comnum}}" bindtap="add">+</text>
+</view>
+<!-- 删除 -->
+<icon type="clear" size="18" color="red" class="iconstyle" bindtap="delshop" data-id="{{item.id}}" ></icon>
+
+
+</view>
+</scroll-view>
+</view>
+<!-- 结算 -->
+<view class="footer">
+  <view  bindtap="selectall" class="checkall {{isSelectAll?'myicon-tick-checked':'myicon-tick-uncheck'}}"></view>
+  <view class="footerprice">价格:{{totelprice}}¥</view>
+ <view class="footerfont" >
+ <view bindtap="orderplace">
+ 结算
+    <!-- <navigator url="../shop/clearshop/shoporder">结算</navigator> -->
+ </view>
+ </view>
+</view>

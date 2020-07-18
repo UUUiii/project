@@ -1,0 +1,182 @@
+/* pages/shop/clearshop/shoporder.wxss */
+
+  .footer{
+    height: 120rpx;
+    width: 100vw;
+    background: #eee;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footerfont{
+    background: skyblue;
+    height: 100%;
+    color: #fff;
+    padding: 0 100rpx;
+    line-height: 120rpx;
+  }
+
+ .checkall{
+  left: 20rpx;
+  }
+.iconstyle{
+  float: right;
+  margin: 0 5rpx;
+}
+.container{
+  /* border:1rpx solid black; */
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  width: 100vw;
+  height: 100%;
+}
+.head{
+  margin-top:-180rpx;
+  height: 15%;
+  width: 100vw;
+  /* border:1rpx solid black; */
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #cccccc;
+  bottom:10rpx;
+}
+.courier{
+  display: flex;
+  flex-direction: row;
+  margin:20rpx;
+  font-family: '宋体';
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.v1{
+  background: #cccccc;
+  width:140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 18rpx;
+  color:#fff;
+  text-align: center;
+}
+.view1{
+  background:red;
+  width:140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 18rpx;
+  color:#fff;
+  text-align: center;
+  
+}
+.v2{
+  background: #cccccc;
+  margin-left: 10rpx;
+  width:140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 18rpx;
+  color:#fff;
+  text-align: center;
+}
+.view2{
+  background:red;
+  margin-left: 10rpx;
+  width:140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 18rpx;
+  color:#fff;
+  text-align: center;
+  
+}
+.title{
+  height: 10%;
+  text-align: left;
+  margin:10rpx;
+  /* border:1rpx solid black; */
+  font-family: '宋体';
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+.concent{
+  display: flex;
+  flex-direction: column;
+  height: 400rpx; 
+  border-bottom: 1rpx solid #cccccc;
+  justify-content: space-between;
+  align-items: center;
+}
+.concent image{
+  width: 120rpx;
+  height: 140rpx;
+  bottom:10rpx;
+  
+}
+.conimg{
+  margin-left: -100rpx;
+  width: 30%;
+  text-align: center;
+   /* border:1rpx solid black; */
+}
+.con{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20rpx;
+  bottom: 20rpx;
+  width: 100%;
+}
+.con .na{
+  margin:8rpx;
+  margin-left: 100rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30rpx;
+  font-weight: 600;
+  width: 20%;
+  text-align: left;
+}
+.con .n{
+  margin-top: 80rpx;
+  margin-left: -150rpx;
+  color: #cccccc;
+}
+.con .spe{
+  font-family: '宋体';
+  color: #cccccc;
+  font-size: 22rpx;
+  margin-top: 80rpx;
+  margin-left: 150rpx;
+  width: 60rpx;
+}
+.con .p{
+  margin-top: 80rpx;
+  margin-left: 80rpx;
+}
+.fmsg{
+  margin-top: -220rpx;
+}
+.message{
+  margin:10rpx;
+  /* margin-top: -auto; */
+  display: flex;
+  border-bottom: 1rpx solid #cccccc;
+}
+.message input{
+  height: 80rpx;
+  width: 100vw;
+}
+.footerprice{
+  color: red;
+  margin:8rpx;
+}
+.get{
+  background: red;
+  width: 120rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: white;
+  border-radius: 25rpx;
+  text-align: center;
+}

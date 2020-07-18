@@ -1,0 +1,45 @@
+<!--pages/shop/clearshop/shoporder.wxml-->
+<view class="container">
+  <view class="head">
+    <text class="title">配送方式</text>
+  <view class="courier">
+    <view class="{{sel?'view1':'v1'}}" data-way="上门自提" bindtap="sell">上门自提</view>
+    <view class="{{sell?'view2':'v2'}}" data-way="快递配送" bindtap="sell">快递配送</view>
+  </view>
+  </view>
+
+  <!-- 商品 -->
+  <scroll-view scroll-y class="concent" >
+  <view wx:for="{{oshoplist}}" wx:key="index" class="con">
+  <view class="conimg">
+  <image src="{{item.comimgsrc}}" mode="widthFix" mode="heightFix"></image>
+    </view>
+    <view class="na">{{item.comname}}</view>
+    <view class="n">X{{item.num}}</view>
+    <view class="spe">{{item.specification}}</view>
+    <view class="p">¥{{item.price}}</view>
+  </view>
+  </scroll-view>
+</view>
+<view class="fmsg">
+<view class="message">
+<input type="text" placeholder="姓名" bindinput="name"></input>
+</view>
+<view class="message">
+<input type="text" placeholder="电话号" bindinput="photo"></input>
+</view>
+<view class="message">
+<input type="text" placeholder="详细地址" bindinput="place"  value="{{place}}"></input>
+<view class="get" bindtap="gain">获取</view>
+</view>
+<view class="message">
+<input type="text" placeholder="买家留言" bindinput="msg"></input>
+</view>
+</view>
+<!-- 支付-->
+<view class="footer">
+  <view class="footerprice">价格:¥{{totelprice}}</view>
+ <view class="footerfont" bindtap="payment">
+  支付
+ </view>
+ </view>

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/shop/shop",
+    "pages/classify/classify",
+    "pages/logs/logs",
+    "pages/register/register",
+    "pages/updatepass/updatepass",
+    "pages/order/order",
+    "pages/place/place",
+    "pages/place/add/add",
+    "pages/shop/clearshop/shoporder",
+    "pages/prodetail/prodetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "艳兰牌洁净剂",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页 (2).png",
+        "selectedIconPath": "images/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/分类.png",
+        "selectedIconPath": "images/分类 (1).png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物",
+        "iconPath": "images/购物.png",
+        "selectedIconPath": "images/购物 (1).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "账户",
+        "iconPath": "images/账户 (1).png",
+        "selectedIconPath": "images/账户 (2).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

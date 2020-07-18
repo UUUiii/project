@@ -1,0 +1,52 @@
+<!--pages/user/user.wxml-->
+<view class="body">
+
+<view class="head">
+  <image src="{{info.avatarUrl}}" class="img"></image> 
+  <view class="name">{{info.nickName}}</view>
+  <view class="place" >
+  <navigator url="/pages/place/place">收货地址</navigator> 
+  </view>
+</view>
+
+
+<view class="container">
+
+<view class="concent">
+
+  <view class="col">
+    <view>0</view>
+    <view>我的收藏</view>
+  </view>
+
+  <view class="history ">
+    <view>0</view>
+    <view>我的足迹</view>
+  </view>
+
+</view>
+
+<view class="order">
+  <view class="title">
+    <text class="orl">我的订单</text>
+    <navigator url="/pages/order/order?iconname=全部" class="orr" >查看更多>></navigator>
+  </view>
+
+<view class="orderlist">
+  <view class="olist" wx:for="{{iconlist}}" wx:key="{{index}}" >
+    <navigator url="../order/order?iconname={{item.iconname}}">
+  <view class="icon"  data-name="{{item.iconname}}">
+  <image src="{{item.iconsrc}}" mode="widthFix" mode="heightFix"></image>
+  <view>{{item.iconname}}</view>
+  </view>
+    </navigator>
+  </view> 
+</view>
+
+</view>
+
+</view>
+
+
+
+</view>
